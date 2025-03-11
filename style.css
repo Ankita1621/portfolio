@@ -310,7 +310,72 @@ header {
   .project-info h3:hover i {
     transform: rotate(10deg) scale(1.2);
   }
+  /* Skills Section */
+#skills {
+    padding: 80px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
   
+  #skills h2 {
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+    color: #222;
+  }
+  
+  .skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 120px;
+    transition: transform 0.3s ease;
+  }
+  
+  .skill i {
+    font-size: 3rem;
+    color: #ff6347;
+    margin-bottom: 10px;
+  }
+  
+  .skill span {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .skill:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .skills-list {
+      gap: 20px;
+    }
+  
+    .skill {
+      width: 100px;
+    }
+  
+    .skill i {
+      font-size: 2.5rem;
+    }
+  
+    .skill span {
+      font-size: 1rem;
+    }
+  }  
   /* Responsive */
   @media (max-width: 768px) {
     .project-card {
