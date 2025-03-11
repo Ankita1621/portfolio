@@ -125,6 +125,18 @@ header {
     background-color: #ff6347;
     transform: scale(1.05);
   }
+  .profile-pic img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ffcc00;
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-pic img:hover {
+    transform: scale(1.05);
+  }
   
   /* About Section */
   #about {
